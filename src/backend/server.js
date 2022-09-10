@@ -30,7 +30,7 @@ app.use(cors());
 dotenv.config();
 
 mongoose
-  .connect(process.env.DATABASE_URL, {
+  .connect(process.env.DATABASE_URL_2, {
     useNewUrlParser: true,
   })
   .then(() => console.log("database is connected successfully"))
@@ -53,6 +53,6 @@ app.get("/order-tracking/:userid/:ordernumber", getOrderByParams);
 app.post("/account-exist", accountExist);
 app.post("/products/:category/:brand", getByCategory);
 
-app.listen(process.env.MONGODB_URI, () => {
+app.listen(process.env.MONGODB_URI || 8001, () => {
   console.log("server is listening...");
 });
