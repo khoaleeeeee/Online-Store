@@ -30,7 +30,7 @@ app.use(cors());
 dotenv.config();
 
 mongoose
-  .connect(process.env.DATABASE_URL_2, {
+  .connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
   })
   .then(() => console.log("database is connected successfully"))
