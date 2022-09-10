@@ -1,0 +1,45 @@
+.header {
+  background: var(--bg-secondary);
+  z-index: 20;
+  box-shadow: 1px 10px 20px var(--shadow-1);
+  height: 40px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+  opacity: 1;
+}
+
+.logo {
+  left: 20px;
+  top: -20px;
+  position: fixed;
+}
+
+.header_items {
+  padding-left: 40vw;
+  position: relative;
+  display: flex;
+}
+
+.item {
+  font-size: 18px;
+  width: 9.8vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--blue-color);
+  font-weight: 600;
+}
+
+.numberOfItems {
+  position: absolute;
+  transform: translate(1.5px, -3px);
+}

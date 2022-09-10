@@ -1,0 +1,54 @@
+.confirm_box {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  border: 1px solid #e5e5e5;
+  margin-right: auto;
+  margin-left: 10%;
+  top: 30px;
+  display: grid;
+}
+
+.confirm_and_summary {
+  display: flex;
+}
+.sum_box {
+  width: 25%;
+  margin-top: 1.8rem;
+  margin-right: 10%;
+}
+.text_confirm {
+  display: grid;
+  justify-content: center;
+}
+.info_confirm {
+  display: flex;
+  align-items: center;
+}
+.confirm_label {
+  margin-top: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_confirm_col1,
+.info_confirm_col2 {
+  padding: 1rem;
+  width: 50%;
+  display: grid;
+}
+.customer_information {
+  display: grid;
+  margin-top: 1rem;
+}
+.confirm_cusInfo {
+  margin-top: 1rem;
+}
+.confirm_cusInfo_2 {
+  margin-top: 0.5rem;
+}
+.finish_btn {
+  margin-top: 2.5rem !important;
+  margin-left: 25% !important;
+  width: 20% !important;
+}

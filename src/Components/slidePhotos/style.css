@@ -1,0 +1,16 @@
+.each-fade {
+  height: 50vh;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.slide-container {
+  position: relative;
+  box-shadow: 1px 8px 12px var(--shadow-3);
+  top: 60px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

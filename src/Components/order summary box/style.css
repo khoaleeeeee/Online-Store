@@ -1,0 +1,40 @@
+.summary_box {
+  width: 100%;
+  height: 320px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  display: grid;
+}
+
+.ship_to {
+  display: grid;
+  padding: 2rem;
+}
+.ship_to span {
+  margin-top: 5px;
+}
+
+.summary_content {
+  padding: 2rem;
+}
+
+.summary_content span {
+  font-size: 20px;
+  display: grid;
+}
+.summany_line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.each_item_summary {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.item_summary {
+  margin-top: 1rem;
+  overflow-y: scroll;
+  height: 3rem;
+}

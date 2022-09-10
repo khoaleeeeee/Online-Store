@@ -1,0 +1,22 @@
+.signin_wrapper {
+  display: grid;
+}
+.signin_content {
+  margin-top: 70px;
+  height: 20vh;
+  display: flex;
+}
+
+.signin_col1 {
+  display: grid;
+  width: 45%;
+  height: 250px;
+  padding: 2rem;
+}
+
+.signin_col2 {
+  display: grid;
+  width: 45%;
+  height: 250px;
+  padding: 2rem;
+}

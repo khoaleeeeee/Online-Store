@@ -1,0 +1,78 @@
+.account_content {
+  margin-top: 70px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.account_col1 {
+  width: 20%;
+  background: #f1f1f1;
+  height: fit-content;
+  margin-right: 10%;
+}
+
+.account_col2 {
+  width: 60%;
+}
+
+.account_col2_content_orders {
+  display: grid;
+}
+
+.account_col2_content_manage {
+  display: grid;
+}
+
+.account_col1_content {
+  display: grid;
+  font-size: 18px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.red_mark {
+  width: 4px;
+  height: 80%;
+  background: black;
+}
+
+.account_option_wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account_option_wrapper:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.margin_span {
+  margin-top: 1rem;
+}
+
+.orders_header_label {
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.each_order_info_history {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 18px;
+}
+.line_after_this {
+  border-bottom: 1px solid black;
+}
+
+th,
+td {
+  border-bottom: 1px solid #d1d1d1;
+}

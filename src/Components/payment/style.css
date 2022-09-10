@@ -1,0 +1,98 @@
+.payment_box {
+  position: relative;
+  width: 70%;
+  height: 52rem;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+  display: grid;
+}
+.content_cols {
+  display: flex;
+}
+.payment_row_1 {
+  padding: 3rem;
+}
+.title_label {
+  font-size: 2rem;
+}
+.col_1 {
+  display: grid;
+  width: 50%;
+}
+.col_2 {
+  display: grid;
+  width: 40%;
+  margin-left: 4rem;
+}
+.line {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.payment_input {
+  padding: 1.5rem;
+  padding-left: 0;
+}
+.payment_input img {
+  width: 7rem;
+  margin-left: 10px;
+}
+.payment_input input {
+  padding: 10px;
+}
+
+.payment_input_items {
+  display: flex;
+  align-items: center;
+}
+
+.credit_payment {
+  padding-top: 1.5rem;
+}
+
+.paypal_payment {
+  padding-top: 1.5rem;
+}
+.credit_payment_expand {
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.payment_input_field {
+  background: #f1f1f1;
+  border: 1px solid #c4c6ca;
+  height: 2rem;
+  width: 250px;
+  margin-right: 5rem;
+}
+
+.input_field {
+  margin-top: 20px;
+}
+
+.validation {
+  display: flex;
+  align-items: center;
+}
+
+.policy {
+  margin-top: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.btn_img {
+  height: 20px;
+}
+.paypal {
+  background: #f2bc39 !important;
+  border: 0px;
+}
+.previous_btn {
+  position: absolute;
+  width: 20% !important;
+  height: fit-content;
+  margin: 2rem !important;
+  margin-top: 85% !important;
+}

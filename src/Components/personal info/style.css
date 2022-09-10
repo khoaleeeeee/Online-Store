@@ -1,0 +1,53 @@
+.personal_box {
+  position: relative;
+  width: 70%;
+  height: fit-content;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  top: 150px;
+}
+.per_row_1 {
+  padding: 3rem;
+  display: grid;
+}
+.ship_label {
+  font-size: 2rem;
+}
+
+.input_field_wrapper {
+  display: grid;
+  margin-top: 3rem;
+}
+.input_label {
+  font-size: 14px;
+}
+
+.ship_input {
+  background: #f1f1f1;
+  border: 1px solid #c4c6ca;
+  height: 2rem;
+  width: 250px;
+  margin-right: 5rem;
+}
+.ship_input:focus {
+  background: white;
+}
+.flex_wrapper {
+  display: flex;
+}
+
+.picker {
+  padding: 10px;
+}
+
+.continue_btn {
+  margin: 20px;
+  margin-top: 0px;
+  margin-left: 65%;
+  width: 30% !important;
+}
+
+.logged_in_info {
+  display: grid;
+}
