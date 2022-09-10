@@ -53,6 +53,6 @@ app.get("/order-tracking/:userid/:ordernumber", getOrderByParams);
 app.post("/account-exist", accountExist);
 app.post("/products/:category/:brand", getByCategory);
 
-app.listen(process.env.MONGODB_URI || 8001, () => {
+app.listen(process.env.PORT || 8001, () => {
   console.log("server is listening...");
 });
