@@ -9,9 +9,12 @@ export default function Cards() {
   const [itemList, setItemList] = useState([]);
 
   const getItems = async () => {
-    axios.get("http://localhost:8001/getItemList").then((res) => {
-      setItemList(res.data);
-    });
+    axios
+      .get(`https://aqueous-basin-40901.herokuapp.com/getItemList`)
+      .then((res) => {
+        console.log(res.data);
+        setItemList(res.data);
+      });
   };
   if (itemList.length === 0) {
     getItems();
