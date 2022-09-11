@@ -15,7 +15,7 @@ export default function PopUp({ setCartVisible }) {
   const getItems = async () => {
     try {
       const { data } = await axios.post(
-        "hhttps://khoaperfumeonline.herokuapp.com/getCartItems",
+        "https://khoaperfumeonline.herokuapp.com/getCartItems",
         {
           user_id: user._id,
         }
