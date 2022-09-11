@@ -12,7 +12,6 @@ export default function Cards() {
     axios
       .get(`https://aqueous-basin-40901.herokuapp.com/getItemList`)
       .then((res) => {
-        console.log(res.data);
         setItemList(res.data);
       });
   };
