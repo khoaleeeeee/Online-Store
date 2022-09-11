@@ -22,11 +22,14 @@ export default function OrderTrackingInput({
   const findOrder = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post("http://localhost:8001/findOrder", {
-        email: email,
-        order_number: orderNumber,
-        user_id: user._id,
-      });
+      const { data } = await axios.post(
+        "https://khoaperfumeonline.herokuapp.com/findOrder",
+        {
+          email: email,
+          order_number: orderNumber,
+          user_id: user._id,
+        }
+      );
       if (!order) {
         setOrder(data);
       }

@@ -23,10 +23,13 @@ export default function SignIn() {
   const onSubmitSignIn = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:8001/signin", {
-        email: email,
-        password: password,
-      });
+      const response = await axios.post(
+        "https://khoaperfumeonline.herokuapp.com/signin",
+        {
+          email: email,
+          password: password,
+        }
+      );
       setLoading(false);
       console.log(response.data);
       dispatch({ type: "LOGIN", payload: response.data });

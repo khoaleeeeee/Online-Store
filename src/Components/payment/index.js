@@ -31,7 +31,7 @@ export default function Payment({
     const data = await getCartItems(user._id);
     var today = new Date();
     try {
-      await axios.post("http://localhost:8001/addOrder", {
+      await axios.post("https://khoaperfumeonline.herokuapp.com/addOrder", {
         order_total: total,
         user_id: user._id,
         order_date: today,

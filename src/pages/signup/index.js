@@ -49,9 +49,12 @@ export default function SignUp() {
   }
   const accountExist = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8001/account-exist", {
-        email: signinInfo.email,
-      });
+      const { data } = await axios.post(
+        "hhttps://khoaperfumeonline.herokuapp.com/account-exist",
+        {
+          email: signinInfo.email,
+        }
+      );
       return data;
     } catch (error) {
       console.log("fail sign up/ account exist ");
@@ -60,7 +63,7 @@ export default function SignUp() {
 
   function onSubmitHandler() {
     try {
-      axios.post("http://localhost:8001/signup", {
+      axios.post("https://khoaperfumeonline.herokuapp.com/signup", {
         signin_info: signinInfo,
         personal_info: userEnter,
       });

@@ -17,7 +17,7 @@ export default function Item() {
   const getItems = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8001/items/${itemName}`
+        `https://khoaperfumeonline.herokuapp.com/items/${itemName}`
       );
       setItem(data);
     } catch (error) {

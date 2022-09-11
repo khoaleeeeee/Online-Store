@@ -45,7 +45,7 @@ export default function OrderTrackingOutput() {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `http://localhost:8001/order-tracking/${userid}/${ordernumber}`
+        `https://khoaperfumeonline.herokuapp.com/order-tracking/${userid}/${ordernumber}`
       );
 
       setOrder(data);

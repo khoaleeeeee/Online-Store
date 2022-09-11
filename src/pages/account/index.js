@@ -16,9 +16,12 @@ export default function Account() {
 
   const getAllOrders = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8001/getAllOrders", {
-        user_id: user._id,
-      });
+      const { data } = await axios.post(
+        "https://khoaperfumeonline.herokuapp.com/getAllOrders",
+        {
+          user_id: user._id,
+        }
+      );
       if (orders.length === 0) {
         setOrders(data);
       }

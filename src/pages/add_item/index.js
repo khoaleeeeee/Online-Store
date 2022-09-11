@@ -46,7 +46,7 @@ export default function AddItem() {
 
   const addItem = async () => {
     try {
-      axios.post("http://localhost:8001/addItem", {
+      axios.post("https://khoaperfumeonline.herokuapp.com/addItem", {
         title: item.title,
         subtitle: item.subtitle,
         category: item.category,

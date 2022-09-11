@@ -14,9 +14,12 @@ export default function PopUp({ setCartVisible }) {
 
   const getItems = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8001/getCartItems", {
-        user_id: user._id,
-      });
+      const { data } = await axios.post(
+        "hhttps://khoaperfumeonline.herokuapp.com/getCartItems",
+        {
+          user_id: user._id,
+        }
+      );
       setItemList(data);
     } catch (error) {
       console.log(error.reponse.data.message);
@@ -44,7 +47,7 @@ export default function PopUp({ setCartVisible }) {
     try {
       itemList.map((item, index) => {
         if (itemList.length !== 0 && quanList.length !== 0) {
-          axios.post("http://localhost:8001/updateCart", {
+          axios.post("https://khoaperfumeonline.herokuapp.com/updateCart", {
             user_id: user._id,
             title: item.title,
             newQuan: quanList[index],

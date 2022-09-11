@@ -22,7 +22,7 @@ export default function Product() {
       const temp_cat = [];
       const temp_brand = [];
       const { data } = await axios.post(
-        `http://localhost:8001/products/${category}/${brand}`,
+        `https://khoaperfumeonline.herokuapp.com/products/${category}/${brand}`,
         {
           category: cat,
         }

@@ -7,9 +7,12 @@ export const titleFormat = (name) => {
 
 export const getCartItems = async (user_id) => {
   try {
-    const { data } = await axios.post("http://localhost:8001/getCartItems", {
-      user_id: user_id,
-    });
+    const { data } = await axios.post(
+      "https://khoaperfumeonline.herokuapp.com/getCartItems",
+      {
+        user_id: user_id,
+      }
+    );
     return data;
   } catch (error) {
     console.log("getCartItems");
@@ -18,7 +21,9 @@ export const getCartItems = async (user_id) => {
 
 export const emptyCart = async (user_id) => {
   try {
-    axios.post("http://localhost:8001/emptyCart", { user_id });
+    axios.post("https://khoaperfumeonline.herokuapp.com/emptyCart", {
+      user_id,
+    });
   } catch (error) {
     console.log(error.message);
   }

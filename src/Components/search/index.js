@@ -28,7 +28,7 @@ export default function SearchComp() {
   const search = async (searchTerm) => {
     try {
       const { data } = await axios.post(
-        `http://localhost:8001/search/${searchTerm}`,
+        `https://khoaperfumeonline.herokuapp.com/search/${searchTerm}`,
         {}
       );
       return data;

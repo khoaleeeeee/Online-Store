@@ -21,9 +21,12 @@ export default function Header({ numberOfItems }) {
 
   const getItems = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8001/getCartItems", {
-        user_id: user._id,
-      });
+      const { data } = await axios.post(
+        "https://khoaperfumeonline.herokuapp.com/getCartItems",
+        {
+          user_id: user._id,
+        }
+      );
       var updateQuan = 0;
       if (data) {
         data.map((item, index) => {

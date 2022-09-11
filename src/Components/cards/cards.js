@@ -10,7 +10,7 @@ export default function Cards() {
 
   const getItems = async () => {
     axios
-      .get(`https://aqueous-basin-40901.herokuapp.com/getItemList`)
+      .get(`https://khoaperfumeonline.herokuapp.com/getItemList`)
       .then((res) => {
         setItemList(res.data);
       });
